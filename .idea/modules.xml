@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aritmetica/Aritmetica.iml" filepath="$PROJECT_DIR$/Aritmetica/Aritmetica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bank/Bank.iml" filepath="$PROJECT_DIR$/Bank/Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Greeter/Greeter.iml" filepath="$PROJECT_DIR$/Greeter/Greeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Prog 3.iml" filepath="$PROJECT_DIR$/.idea/Prog 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stampa-Leggi da Console/Stampa-Leggi da Console.iml" filepath="$PROJECT_DIR$/Stampa-Leggi da Console/Stampa-Leggi da Console.iml" />
+    </modules>
+  </component>
+</project>
