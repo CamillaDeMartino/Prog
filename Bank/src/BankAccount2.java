@@ -33,6 +33,7 @@ public class BankAccount2{
         return totDeposit;
     }
 
+
     public String getNumCorr(){
         String formattNumber = String.format("%010d", accountNumber);
         return formattNumber;
@@ -53,6 +54,7 @@ public class BankAccount2{
 
         return getBalance() * DOLLAR;
     }
+
 
     private double balance;
     private boolean tax;
