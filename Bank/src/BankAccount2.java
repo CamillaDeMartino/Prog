@@ -1,6 +1,6 @@
 
 
-public class BankAccount2{
+public class BankAccount2 implements Measurable{
 
     public BankAccount2(double soldi){
 
@@ -8,7 +8,6 @@ public class BankAccount2{
         lastAssignedNumber++;   //genera il successivo numero di conto
         balance = soldi;
         totDeposit = 0;
-
     }
 
     public BankAccount2(){
@@ -55,6 +54,10 @@ public class BankAccount2{
         return getBalance() * DOLLAR;
     }
 
+    @Override
+    public double getMeasure() {
+        return balance;
+    }
 
     private double balance;
     private boolean tax;
