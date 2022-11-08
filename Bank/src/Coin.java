@@ -9,5 +9,15 @@ public class Coin implements Measurable{
         return value;
     }
 
+    @Override
+    public boolean equals(Object obj){
+        Coin i = (Coin) obj;
+
+        if(i.getMeasure() == this.getMeasure())
+            return true;
+
+        return false;
+    }
+
     private double value;
 }
