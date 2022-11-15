@@ -20,7 +20,19 @@ public class BankAccount2 implements Measurable{
     }
 
     public void withdraw(double prelievo){
-        balance = balance - prelievo;
+
+        try{
+            //controllo del saldo
+            if(prelievo > getBalance()) {
+                //lancio dell'eccezione
+                throw new NoFundsException();
+            }
+            balance = balance - prelievo;
+        }
+        catch(NoFundsException exc){
+            System.out.println(exc.toString());
+        }
+
     }
 
     public double getBalance() {

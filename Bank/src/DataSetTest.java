@@ -23,6 +23,8 @@ public class DataSetTest {
         System.out.println("Soldi massimi: "+ max.getMeasure());
         System.out.println("La media è : " + bankData2.getAverage());
 
+
+
     }
 
 
