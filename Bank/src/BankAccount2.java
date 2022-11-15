@@ -82,5 +82,48 @@ public class BankAccount2 implements Measurable{
     private static double DOLLAR = 0.97;
 
 
+    /*Esercizio con classi anonime e enumerazione*/
+
+
+    //classi anonime che fanno l'overirde dell'interfaccia;
+    CurrencyConverter JPYConverter = new CurrencyConverter() {
+        @Override
+        public double convert(double v) {
+            return v * 139.96;
+        }
+    };
+
+    CurrencyConverter GBPConverter = new CurrencyConverter() {
+        @Override
+        public double convert(double v) {
+            return v * 0.85;
+        }
+    };
+    public double getJPY(double value){return JPYConverter.convert(value);}
+    public double getGBP(double value){return GBPConverter.convert(value);}
+
+    private EURConverter euro = new EURConverter();
+    public void toConvert(Currency value){
+
+        switch (value){
+            case EURO:
+                System.out.println("Converito in euro -> " + euro.convert(getBalance()));
+                break;
+            case YEN:
+                System.out.println("Convertito un yen -> " + JPYConverter.convert(getBalance()));
+                break;
+            case STERLINE:
+                System.out.println("Converito in sterline -> " + GBPConverter.convert(getBalance()));
+                break;
+            default:
+                System.out.println("Conversione non disponibile");
+
+        }
+
+
+    }
+
+
 }
+
 
